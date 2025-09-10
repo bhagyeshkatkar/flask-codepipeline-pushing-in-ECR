@@ -1,4 +1,4 @@
-FROM python:3.9-slim
+FROM public.ecr.aws/docker/library/python:3.9-slim
 
 # Set working directory
 WORKDIR /app
@@ -15,3 +15,4 @@ EXPOSE 5000
 
 # Run the Flask app
 CMD ["python", "app.py"]
+
